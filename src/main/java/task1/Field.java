@@ -3,27 +3,27 @@ package task1;
 class Field {
     int x;
     int y;
-    static int[][] field;
+    static char[][] field ;
 
     Field(int h, int w) {
         this.x = h;
         this.y = w;
-        field = new int[this.x][this.y];
+        field = new char[this.x][this.y];
     }
 
     int resultsX() {
-        return (scanner(1));
+        return (scanner('X'));
     }
 
     int results0() {
-        return (scanner(2));
+        return (scanner('0'));
     }
 
     private static int scanner(int count) {
         int max = 0;
         int temp;
 
-        for (int[] ints : field) {
+        for (char[] ints : field) {
             for (int j = 0; j < ints.length; j++) {
                 temp = 0;
                 if ((ints[j] == count))
@@ -58,7 +58,7 @@ class Field {
         return max;
     }
 
-    private static int diagScanner(int[][] field, int max, int num) {
+    private static int diagScanner(char[][] field, int max, int num) {
         int temp;
         int max2 = max;
         for (int i = 0; i < field.length; i++) {
@@ -83,7 +83,6 @@ class Field {
                         if (field[i + z][j - z] == num) {
                             temp++;
                         } else break;
-
                 if (temp > max2)
                     max2 = temp;
             }
@@ -95,7 +94,7 @@ class Field {
     // for (int[] ints : field) {for (int anInt : ints) {
     //System.out.print(anInt + " ");}System.out.println();}}
 
-    static void add(int value, int column, int line) {
+    static void add(char value, int column, int line) {
         field[column][line] = value;
     }
 
