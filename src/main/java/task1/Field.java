@@ -3,9 +3,12 @@ package task1;
 class Field {
     int x;
     int y;
-    static char[][] field ;
+    static char[][] field;
 
     Field(int h, int w) {
+        if (h <= 0 || w <= 0) {
+            throw new IllegalArgumentException("Размер < 1");
+        }
         this.x = h;
         this.y = w;
         field = new char[this.x][this.y];
@@ -95,6 +98,12 @@ class Field {
     //System.out.print(anInt + " ");}System.out.println();}}
 
     static void add(char value, int column, int line) {
+        if (column > field.length || line > field[0].length) {
+            throw new IllegalArgumentException("Входные данные(Вылез за приделы)");
+        }
+        if ((value == '0') || (value == 'X')) {
+            throw new IllegalArgumentException("Входные данные(X/0)");
+        }
         field[column][line] = value;
     }
 
