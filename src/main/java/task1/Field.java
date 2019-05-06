@@ -101,10 +101,15 @@ class Field {
         if (column > field.length || line > field[0].length) {
             throw new IllegalArgumentException("Входные данные(Вылез за приделы)");
         }
-        if ((value == '0') || (value == 'X')) {
+        if ((value != '0') && (value != 'X')) {
             throw new IllegalArgumentException("Входные данные(X/0)");
+        } else {
+            if (field[column][line] == '0' || field[column][line] == 'X')
+                throw new IllegalArgumentException("Клетка занята");
+            field[column][line] = value;
+
         }
-        field[column][line] = value;
+
     }
 
 }
