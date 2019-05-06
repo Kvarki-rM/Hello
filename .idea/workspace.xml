@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57e0fc92-ee70-4a8c-bbee-88f88fec7645" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/task1/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/task1/Field.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/task1/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/task1/MainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task1/Field.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/task1/Field.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/task1/MainTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/task1/MainTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/task1/MainTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
+            <state relative-caret-position="1564">
+              <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -36,30 +33,19 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/task1/Field.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="75" selection-start-line="75" selection-end-line="75" />
+            <state relative-caret-position="289">
+              <caret line="94" column="60" lean-forward="true" selection-start-line="94" selection-start-column="60" selection-end-line="94" selection-end-column="60" />
               <folding>
-                <element signature="e#212#213#0" expanded="true" />
-                <element signature="e#247#248#0" expanded="true" />
-                <element signature="e#269#270#0" expanded="true" />
-                <element signature="e#304#305#0" expanded="true" />
+                <element signature="method#Field#0;class#Field#0" />
+                <element signature="method#scanner#1;class#Field#0" />
+                <element signature="e#424#819#1" />
+                <element signature="e#867#1271#1" />
                 <element signature="e#1317#1379#0" />
-                <element signature="e#2953#2954#0" expanded="true" />
+                <element signature="method#diagScanner#0;class#Field#0" />
+                <element signature="e#2255#2279#0" />
+                <element signature="e#2446#2490#1" />
+                <element signature="e#2962#2963#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="104" selection-start-line="3" selection-start-column="104" selection-end-line="3" selection-end-column="104" />
             </state>
           </provider>
         </entry>
@@ -88,8 +74,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/task1/Z.java" />
         <option value="$PROJECT_DIR$/src/main/java/task1/Main.java" />
-        <option value="$PROJECT_DIR$/src/test/java/task1/MainTest.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/task1/MainTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/task1/Field.java" />
       </list>
     </option>
@@ -215,7 +201,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="Hello" />
       <extension name="coverage">
         <pattern>
@@ -230,53 +216,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Hello" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Test1" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Hello" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="task1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="task1" />
-      <option name="MAIN_CLASS_NAME" value="task1.Tests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tests.mainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Hello" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="task1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="task1" />
-      <option name="MAIN_CLASS_NAME" value="task1.Tests" />
-      <option name="METHOD_NAME" value="mainTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.MainTest" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MainTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.Tests" />
-        <item itemvalue="JUnit.Tests.mainTest" />
-        <item itemvalue="JUnit.Test1" />
       </list>
     </recent_temporary>
   </component>
@@ -305,38 +251,45 @@
       <option name="project" value="LOCAL" />
       <updated>1557164652461</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="!">
+      <created>1557164731391</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1557164731391</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainTest - 2019.05.06 at 20h 15m 06s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest - 2019.05.06 at 20h 15m 52s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest - 2019.05.06 at 20h 18m 31s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest - 2019.05.06 at 20h 20m 31s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest - 2019.05.06 at 20h 26m 13s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest - 2019.05.06 at 20h 33m 35s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest - 2019.05.06 at 20h 40m 36s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest - 2019.05.06 at 20h 41m 15s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MainTest - 2019.05.06 at 20h 41m 59s.xml">
       <configuration name="MainTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="MainTest - 2019.05.06 at 20h 43m 43s.xml">
+      <configuration name="MainTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest - 2019.05.06 at 20h 48m 03s.xml">
+      <configuration name="MainTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest - 2019.05.06 at 20h 48m 45s.xml">
+      <configuration name="MainTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest - 2019.05.06 at 21h 06m 29s.xml">
+      <configuration name="MainTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest - 2019.05.06 at 21h 07m 04s.xml">
+      <configuration name="MainTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest - 2019.05.06 at 21h 07m 44s.xml">
+      <configuration name="MainTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest - 2019.05.06 at 21h 09m 01s.xml">
+      <configuration name="MainTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest - 2019.05.06 at 21h 10m 27s.xml">
+      <configuration name="MainTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest - 2019.05.06 at 21h 10m 42s.xml">
       <configuration name="MainTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -370,7 +323,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.18872017" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5010661" side_tool="true" weight="0.34273317" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.329718" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3257329" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3253796" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -422,9 +375,6 @@
     <entry file="file://$PROJECT_DIR$/Hello.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -432,10 +382,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/task1/MainTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
+        <state relative-caret-position="1564">
+          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -444,15 +397,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/task1/Field.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        <state relative-caret-position="289">
+          <caret line="94" column="60" lean-forward="true" selection-start-line="94" selection-start-column="60" selection-end-line="94" selection-end-column="60" />
           <folding>
-            <element signature="e#212#213#0" expanded="true" />
-            <element signature="e#247#248#0" expanded="true" />
-            <element signature="e#269#270#0" expanded="true" />
-            <element signature="e#304#305#0" expanded="true" />
+            <element signature="method#Field#0;class#Field#0" />
+            <element signature="method#scanner#1;class#Field#0" />
+            <element signature="e#424#819#1" />
+            <element signature="e#867#1271#1" />
             <element signature="e#1317#1379#0" />
-            <element signature="e#2953#2954#0" expanded="true" />
+            <element signature="method#diagScanner#0;class#Field#0" />
+            <element signature="e#2255#2279#0" />
+            <element signature="e#2446#2490#1" />
+            <element signature="e#2962#2963#0" expanded="true" />
           </folding>
         </state>
       </provider>
