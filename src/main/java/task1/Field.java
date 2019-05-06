@@ -48,13 +48,12 @@ class Field {
             }
         }
 
-        int[][] revert = new int[field.length][field[1].length];
-        for (int i = 0; i < field.length; i++)
-            for (int j = 0; j < field[1].length; j++)
-                revert[i][j] = field[i][field[1].length - j - 1];
+        //    int[][] revert = new int[field.length][field[1].length];
+        //    for (int i = 0; i < field.length; i++)
+        //        for (int j = 0; j < field[1].length; j++)
+        //            revert[i][j] = field[i][field[1].length - j - 1];
 
         max = diagScanner(field, max, count);
-        max = diagScanner(revert, max, count);
 
         return max;
     }
@@ -66,7 +65,7 @@ class Field {
             for (int j = 0; j < field[i].length; j++) {
                 temp = 0;
                 if ((field[i][j] == num))
-                    for (int z = 0; z < Math.min(field[1].length - j, field.length - i); z++)
+                    for (int z = 0; z < Math.min(field[i].length - j, field.length - i); z++)
                         if (field[i + z][j + z] == num)
                             temp++;
                         else break;
@@ -74,21 +73,30 @@ class Field {
                     max2 = temp;
             }
         }
+
+        for (int i = 0; i < field.length; i++) {
+            for (int j = field[i].length - 1; j >= 0; j--) {
+                temp = 0;
+                if ((field[i][j] == num))
+
+                    for (int z = 0; z < Math.min(field.length - i, j); z++)
+                        if (field[i + z][j - z] == num) {
+                            temp++;
+                        } else break;
+
+                if (temp > max2)
+                    max2 = temp;
+            }
+        }
         return max2;
     }
 
-   // static void print() {
-   //     for (int[] ints : field) {
-   //         for (int anInt : ints) {
-   //             System.out.print(anInt + " ");
-   //         }
-   //         System.out.println();
-   //     }
-   // }
+    // static void print() {
+    // for (int[] ints : field) {for (int anInt : ints) {
+    //System.out.print(anInt + " ");}System.out.println();}}
 
     static void add(int value, int column, int line) {
         field[column][line] = value;
     }
-
 
 }
