@@ -77,14 +77,14 @@ class Field {
         return max2;
     }
 
-    static void print() {
-        for (int[] ints : field) {
-            for (int anInt : ints) {
-                System.out.print(anInt + " ");
-            }
-            System.out.println();
-        }
-    }
+   // static void print() {
+   //     for (int[] ints : field) {
+   //         for (int anInt : ints) {
+   //             System.out.print(anInt + " ");
+   //         }
+   //         System.out.println();
+   //     }
+   // }
 
     static void add(int value, int column, int line) {
         field[column][line] = value;
