@@ -105,7 +105,6 @@ class MainTest {
     }
 
     boolean matrixComparison(char[][] a, int[][] b) {
-        System.out.println(a[0][1]);
         if (a.length != b.length || a[0].length != b[0].length) {
             return false;
         } else {

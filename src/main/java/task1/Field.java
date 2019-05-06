@@ -51,11 +51,6 @@ class Field {
             }
         }
 
-        //    int[][] revert = new int[field.length][field[1].length];
-        //    for (int i = 0; i < field.length; i++)
-        //        for (int j = 0; j < field[1].length; j++)
-        //            revert[i][j] = field[i][field[1].length - j - 1];
-
         max = diagScanner(field, max, count);
 
         return max;
@@ -92,10 +87,6 @@ class Field {
         }
         return max2;
     }
-
-    // static void print() {
-    // for (int[] ints : field) {for (int anInt : ints) {
-    //System.out.print(anInt + " ");}System.out.println();}}
 
     static void add(char value, int column, int line) {
         if (column > field.length || line > field[0].length) {
