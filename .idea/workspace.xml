@@ -4,9 +4,6 @@
     <list default="true" id="57e0fc92-ee70-4a8c-bbee-88f88fec7645" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/task1/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/task1/Field.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/task1/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/task1/MainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task1/Field.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/task1/Field.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/task1/MainTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/task1/MainTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/task1/MainTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1564">
-              <caret line="92" lean-forward="true" selection-start-line="91" selection-start-column="30" selection-end-line="92" />
+            <state relative-caret-position="1887">
+              <caret line="111" column="57" selection-start-line="111" selection-start-column="57" selection-end-line="111" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,12 +36,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/task1/Field.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="103" column="13" lean-forward="true" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
+            <state relative-caret-position="284">
+              <caret line="118" column="64" selection-start-line="118" selection-start-column="64" selection-end-line="118" selection-end-column="64" />
               <folding>
-                <element signature="e#318#319#0" expanded="true" />
-                <element signature="e#355#356#0" expanded="true" />
-                <element signature="e#407#408#0" expanded="true" />
+                <element signature="method#scanner#0;class#Field#0" />
+                <element signature="method#diagScanner#0;class#Field#0" />
               </folding>
             </state>
           </provider>
@@ -75,8 +71,8 @@
         <option value="$PROJECT_DIR$/src/main/java/task1/Z.java" />
         <option value="$PROJECT_DIR$/src/main/java/task1/Main.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/task1/Field.java" />
         <option value="$PROJECT_DIR$/src/test/java/task1/MainTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/task1/Field.java" />
       </list>
     </option>
   </component>
@@ -127,54 +123,7 @@
             <path>
               <item name="Hello" type="b2602c69:ProjectViewProjectNode" />
               <item name="Hello" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Hello" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hello" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Hello" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hello" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Hello" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hello" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Hello" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hello" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="task1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Hello" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hello" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Hello" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hello" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Hello" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hello" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="task1" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -332,38 +281,52 @@
       <option name="project" value="LOCAL" />
       <updated>1557212377527</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Убрал статику в массиве и добавил очистку клеток">
+      <created>1557213168584</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1557213168584</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Убрал статику в классе и добавил очистку клеток,попытался добавить enum и поменял формат хранения матрицы">
+      <created>1557221841809</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1557221841809</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainTest - 2019.05.07 at 01h 01m 28s.xml">
+    <history-entry file="MainTest - 2019.05.07 at 12h 28m 29s.xml">
       <configuration name="MainTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainTest - 2019.05.07 at 01h 04m 11s.xml">
+    <history-entry file="MainTest - 2019.05.07 at 12h 29m 11s.xml">
       <configuration name="MainTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainTest_mainTest - 2019.05.07 at 01h 05m 05s.xml">
-      <configuration name="MainTest.mainTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_mainTest - 2019.05.07 at 01h 05m 06s.xml">
-      <configuration name="MainTest.mainTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest - 2019.05.07 at 01h 05m 40s.xml">
+    <history-entry file="MainTest - 2019.05.07 at 12h 29m 58s.xml">
       <configuration name="MainTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainTest - 2019.05.07 at 01h 05m 44s.xml">
+    <history-entry file="MainTest - 2019.05.07 at 12h 30m 26s.xml">
       <configuration name="MainTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainTest - 2019.05.07 at 01h 06m 44s.xml">
+    <history-entry file="MainTest - 2019.05.07 at 12h 30m 55s.xml">
       <configuration name="MainTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainTest - 2019.05.07 at 09h 39m 56s.xml">
+    <history-entry file="MainTest - 2019.05.07 at 12h 31m 18s.xml">
       <configuration name="MainTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainTest - 2019.05.07 at 09h 59m 28s.xml">
+    <history-entry file="MainTest - 2019.05.07 at 12h 33m 42s.xml">
       <configuration name="MainTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainTest - 2019.05.07 at 10h 02m 00s.xml">
+    <history-entry file="MainTest - 2019.05.07 at 12h 34m 21s.xml">
+      <configuration name="MainTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest - 2019.05.07 at 12h 34m 55s.xml">
+      <configuration name="MainTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest - 2019.05.07 at 12h 35m 41s.xml">
       <configuration name="MainTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -380,7 +343,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989154" visible="true" weight="0.1337953" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989154" visible="true" weight="0.1337953" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -389,7 +352,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.5010846" side_tool="true" weight="0.23134328" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49840087" visible="true" weight="0.22993493" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840087" visible="true" weight="0.3546638" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3984799" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -397,7 +360,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.18872017" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50159913" side_tool="true" weight="0.35357916" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286334" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32464713" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32247558" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -410,7 +373,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="!" />
-    <option name="LAST_COMMIT_MESSAGE" value="!" />
+    <MESSAGE value="Убрал статику в массиве и добавил очистку клеток" />
+    <MESSAGE value="Убрал статику в классе и добавил очистку клеток,попытался добавить enum и поменял формат хранения матрицы" />
+    <option name="LAST_COMMIT_MESSAGE" value="Убрал статику в классе и добавил очистку клеток,попытался добавить enum и поменял формат хранения матрицы" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -427,13 +392,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.5.0-M1/junit-platform-commons-1.5.0-M1-sources.jar!/org/junit/platform/commons/util/ReflectionUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="676" selection-start-line="676" selection-end-line="676" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Hello.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -444,9 +402,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -454,22 +409,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.5.0-M1/junit-platform-commons-1.5.0-M1-sources.jar!/org/junit/platform/commons/util/ReflectionUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="677" selection-start-line="677" selection-end-line="677" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/task1/Field.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="103" column="13" lean-forward="true" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
+        <state relative-caret-position="284">
+          <caret line="118" column="64" selection-start-line="118" selection-start-column="64" selection-end-line="118" selection-end-column="64" />
           <folding>
-            <element signature="e#318#319#0" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
+            <element signature="method#scanner#0;class#Field#0" />
+            <element signature="method#diagScanner#0;class#Field#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/task1/MainTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="92" lean-forward="true" selection-start-line="91" selection-start-column="30" selection-end-line="92" />
+        <state relative-caret-position="1887">
+          <caret line="111" column="57" selection-start-line="111" selection-start-column="57" selection-end-line="111" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

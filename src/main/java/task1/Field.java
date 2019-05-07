@@ -113,15 +113,15 @@ class Field {
                 field[i][j] = value._.toString();
     }
 
-    void add(String valueZ, int column, int line) {
+    void add(String value, int column, int line) {
         if (column > field.length || line > field[0].length)
             throw new IllegalArgumentException("Входные данные(Вылезли за приделы поля)");
-        if (!Objects.equals(valueZ, "O") && !Objects.equals(valueZ, "X"))
+        if (!Objects.equals(value, "O") && !Objects.equals(value, "X"))
             throw new IllegalArgumentException("Входные данные(X/0)");
         else {
             if (Objects.equals(field[column][line], "0") || Objects.equals(field[column][line], "X"))
                 throw new IllegalArgumentException("Клетка занята");
-            field[column][line] = valueZ;
+            field[column][line] = value;
 
         }
 
