@@ -5,10 +5,10 @@ import java.util.Objects;
 class Field {
 
     enum Value {
-        _, X, O
+        O, X, _
     }
 
-    Value[][] field;
+    private Value[][] field;
 
     Field(int h, int w) {
         if (h <= 0 || w <= 0) {
@@ -16,6 +16,10 @@ class Field {
         }
         field = new Value[h][w];
         cleanAll();
+    }
+
+    Value[][] outfield() {
+        return field;
     }
 
     int resultsX() {

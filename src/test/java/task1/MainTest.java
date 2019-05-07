@@ -1,13 +1,13 @@
 package task1;
 
 import org.junit.jupiter.api.Test;
+//import org.junit.Test;
 
 import java.util.Objects;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-//import org.junit.Test;
 //import static org.junit.Assert.*;
 
 class MainTest {
@@ -95,14 +95,14 @@ class MainTest {
 
         assertEquals(4, second.resultsX());
         assertEquals(3, second.results0());
-        assertTrue(matrixComparison(second.field, new String[][]{
+        assertTrue(matrixComparison(second.outfield(), new String[][]{
                 {"X", "_", "X", "O"},
                 {"X", "O", "O", "O"},
                 {"X", "X", "X", "_"},
                 {"X", "O", "_", "X"}}));
         assertEquals(5, first.resultsX());
         assertEquals(6, first.results0());
-        assertTrue(matrixComparison(first.field, new String[][]{
+        assertTrue(matrixComparison(first.outfield(), new String[][]{
                 {"O", "_", "O", "O", "X", "X", "O", "X"},
                 {"X", "O", "X", "O", "O", "O", "X", "O"},
                 {"O", "_", "O", "_", "X", "X", "_", "X"},
