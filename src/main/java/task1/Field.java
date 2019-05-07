@@ -16,7 +16,7 @@ class Field {
         //String name(String i) {return i;}
     }
 
-    private String[][] field;
+    String[][] field;
 
     Field(int h, int w) {
         if (h <= 0 || w <= 0) {
