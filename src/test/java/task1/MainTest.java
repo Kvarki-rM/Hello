@@ -17,11 +17,6 @@ class MainTest {
         Field first = new Field(6, 8);
         Field second = new Field(4, 4);
 
-        first.x = 6;
-        first.y = 8;
-
-        second.x = 4;
-        second.y = 4;
 
         first.add("O", 4, 0);
         first.add("O", 2, 2);
@@ -81,15 +76,15 @@ class MainTest {
         second.add("O", 0, 3);
 
         second.add("X", 1, 0);
-        second.add("X", 1, 1);
-        second.add("X", 1, 2);
+        second.add("O", 1, 1);
+        second.add("O", 1, 2);
         second.add("O", 1, 3);
 
-        second.add("O", 2, 0);
-        second.add("O", 2, 1);
+        second.add("X", 2, 0);
+        second.add("X", 2, 1);
         second.add("X", 2, 2);
 
-        second.add("O", 3, 0);
+        second.add("X", 3, 0);
         second.add("O", 3, 1);
         second.add("X", 3, 3);
 
@@ -99,12 +94,12 @@ class MainTest {
         second.clean(0, 1);
 
         assertEquals(4, second.resultsX());
-        assertEquals(2, second.results0());
+        assertEquals(3, second.results0());
         assertTrue(matrixComparison(second.field, new String[][]{
                 {"X", "_", "X", "O"},
-                {"X", "X", "X", "O"},
-                {"O", "O", "X", "_"},
-                {"O", "O", "_", "X"}}));
+                {"X", "O", "O", "O"},
+                {"X", "X", "X", "_"},
+                {"X", "O", "_", "X"}}));
         assertEquals(5, first.resultsX());
         assertEquals(6, first.results0());
         assertTrue(matrixComparison(first.field, new String[][]{
@@ -118,13 +113,13 @@ class MainTest {
 
     }
 
-    boolean matrixComparison(String[][] a, String[][] b) {
+    boolean matrixComparison(Field.Value[][] a, String[][] b) {
         if (a.length != b.length || a[0].length != b[0].length) {
             return false;
         } else {
             for (int i = 0; i < a.length; i++)
                 for (int j = 0; j < a[0].length; j++)
-                    if (!Objects.equals(a[i][j], b[i][j]))
+                    if (!Objects.equals(a[i][j].toString(), b[i][j]))
                         return false;
         }
         return true;

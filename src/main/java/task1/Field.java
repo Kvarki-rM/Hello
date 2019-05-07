@@ -3,61 +3,51 @@ package task1;
 import java.util.Objects;
 
 class Field {
-    int x;
-    int y;
 
-    private enum value {
+    enum Value {
         _, X, O
-        // _(0), X(1), O(2);
-        //  int i;
-        //  value(int i) {
-        //      this.i = i;
-        //  }
-        //String name(String i) {return i;}
     }
 
-    String[][] field;
+    Value[][] field;
 
     Field(int h, int w) {
         if (h <= 0 || w <= 0) {
             throw new IllegalArgumentException("Размер < 1");
         }
-        this.x = h;
-        this.y = w;
-        field = new String[this.x][this.y];
+        field = new Value[h][w];
         cleanAll();
     }
 
     int resultsX() {
-        return (scanner(value.X.toString()));
+        return (scanner(Value.X.toString()));
     }
 
     int results0() {
-        return (scanner(value.O.toString()));
+        return (scanner(Value.O.toString()));
     }
 
     private int scanner(String count) {
         int max = 0;
         int temp;
 
-        for (int i = 0; i < x; i++) {
-            for (int j = 0; j < y; j++) {
+        for (Value[] values : field) {
+            for (int j = 0; j < values.length; j++) {
                 temp = 0;
-                if (Objects.equals(field[i][j], count))
-                    for (int z = 0; z < field[1].length - j; z++)
-                        if (Objects.equals(field[i][j + z], count))
+                if (Objects.equals(values[j].toString(), count))
+                    for (int z = 0; z < values.length - j; z++)
+                        if (Objects.equals(values[j + z].toString(), count))
                             temp++;
                         else break;
                 if (temp > max)
                     max = temp;
             }
         }
-        for (int i = 0; i < x; i++) {
-            for (int j = 0; j < y; j++) {
+        for (int i = 0; i < field.length; i++) {
+            for (int j = 0; j < field[i].length; j++) {
                 temp = 0;
-                if ((Objects.equals(field[i][j], count)))
+                if ((Objects.equals(field[i][j].toString(), count)))
                     for (int z = 0; z < field.length - i; z++)
-                        if (Objects.equals(field[i + z][j], count))
+                        if (Objects.equals(field[i + z][j].toString(), count))
                             temp++;
                         else break;
                 if (temp > max)
@@ -70,15 +60,15 @@ class Field {
         return max;
     }
 
-    private int diagScanner(String[][] field, int max, String num) {
+    private int diagScanner(Value[][] field, int max, String num) {
         int temp;
         int max2 = max;
         for (int i = 0; i < field.length; i++) {
-            for (int j = 0; j < y; j++) {
+            for (int j = 0; j < field[i].length; j++) {
                 temp = 0;
-                if (Objects.equals(field[i][j], num))
+                if (Objects.equals(field[i][j].toString(), num))
                     for (int z = 0; z < Math.min(field[i].length - j, field.length - i); z++)
-                        if (Objects.equals(field[i + z][j + z], num))
+                        if (Objects.equals(field[i + z][j + z].toString(), num))
                             temp++;
                         else break;
                 if (temp > max2)
@@ -87,11 +77,11 @@ class Field {
         }
 
         for (int i = 0; i < field.length; i++) {
-            for (int j = y - 1; j >= 0; j--) {
+            for (int j = field[i].length - 1; j >= 0; j--) {
                 temp = 0;
-                if (Objects.equals(field[i][j], num))
+                if (Objects.equals(field[i][j].toString(), num))
                     for (int z = 0; z < Math.min(field.length - i, j); z++)
-                        if (Objects.equals(field[i + z][j - z], num)) {
+                        if (Objects.equals(field[i + z][j - z].toString(), num)) {
                             temp++;
                         } else break;
                 if (temp > max2)
@@ -104,27 +94,24 @@ class Field {
     void clean(int column, int line) {
         if (column > field.length || line > field[0].length)
             throw new IllegalArgumentException("Входные данные(Вылезли за приделы поля)");
-        field[column][line] = value._.toString();
+        field[column][line] = Value._;
     }
 
     void cleanAll() {
         for (int i = 0; i < field.length; i++)
-            for (int j = 0; j < y; j++)
-                field[i][j] = value._.toString();
+            for (int j = 0; j < field[0].length; j++)
+                field[i][j] = Value._;
     }
 
     void add(String value, int column, int line) {
         if (column > field.length || line > field[0].length)
             throw new IllegalArgumentException("Входные данные(Вылезли за приделы поля)");
-        if (!Objects.equals(value, "O") && !Objects.equals(value, "X"))
+        if (Objects.equals(field[column][line].toString(), "0") || Objects.equals(field[column][line].toString(), "X"))
+            throw new IllegalArgumentException("Клетка занята");
+        if (Objects.equals(value, "X") || Objects.equals(value, "O"))
+            if (Objects.equals(value, "X")) field[column][line] = Value.X;
+            else field[column][line] = Value.O;
+        else
             throw new IllegalArgumentException("Входные данные(X/0)");
-        else {
-            if (Objects.equals(field[column][line], "0") || Objects.equals(field[column][line], "X"))
-                throw new IllegalArgumentException("Клетка занята");
-            field[column][line] = value;
-
-        }
-
     }
-
 }
