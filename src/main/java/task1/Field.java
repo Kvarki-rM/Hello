@@ -1,9 +1,22 @@
 package task1;
 
+import java.util.Objects;
+
 class Field {
     int x;
     int y;
-    char[][] field;
+
+    enum value {
+        _, X, O
+        // _(0), X(1), O(2);
+        //  int i;
+        //  value(int i) {
+        //      this.i = i;
+        //  }
+        //String name(String i) {return i;}
+    }
+
+    String[][] field;
 
     Field(int h, int w) {
         if (h <= 0 || w <= 0) {
@@ -11,28 +24,28 @@ class Field {
         }
         this.x = h;
         this.y = w;
-        field = new char[this.x][this.y];
+        field = new String[this.x][this.y];
+        cleanAll();
     }
 
     int resultsX() {
-        return (scanner('X'));
+        return (scanner(value.X.toString()));
     }
 
     int results0() {
-        return (scanner('0'));
+        return (scanner(value.O.toString()));
     }
 
-    private int scanner(int count) {
+    private int scanner(String count) {
         int max = 0;
         int temp;
-
 
         for (int i = 0; i < x; i++) {
             for (int j = 0; j < y; j++) {
                 temp = 0;
-                if ((field[i][j] == count))
+                if (Objects.equals(field[i][j], count))
                     for (int z = 0; z < field[1].length - j; z++)
-                        if (field[i][j + z] == count)
+                        if (Objects.equals(field[i][j + z], count))
                             temp++;
                         else break;
                 if (temp > max)
@@ -42,9 +55,9 @@ class Field {
         for (int i = 0; i < x; i++) {
             for (int j = 0; j < y; j++) {
                 temp = 0;
-                if ((field[i][j] == count))
+                if ((Objects.equals(field[i][j], count)))
                     for (int z = 0; z < field.length - i; z++)
-                        if (field[i + z][j] == count)
+                        if (Objects.equals(field[i + z][j], count))
                             temp++;
                         else break;
                 if (temp > max)
@@ -57,15 +70,15 @@ class Field {
         return max;
     }
 
-    private int diagScanner(char[][] field, int max, int num) {
+    private int diagScanner(String[][] field, int max, String num) {
         int temp;
         int max2 = max;
         for (int i = 0; i < field.length; i++) {
             for (int j = 0; j < y; j++) {
                 temp = 0;
-                if ((field[i][j] == num))
+                if (Objects.equals(field[i][j], num))
                     for (int z = 0; z < Math.min(field[i].length - j, field.length - i); z++)
-                        if (field[i + z][j + z] == num)
+                        if (Objects.equals(field[i + z][j + z], num))
                             temp++;
                         else break;
                 if (temp > max2)
@@ -76,10 +89,9 @@ class Field {
         for (int i = 0; i < field.length; i++) {
             for (int j = y - 1; j >= 0; j--) {
                 temp = 0;
-                if ((field[i][j] == num))
-
+                if (Objects.equals(field[i][j], num))
                     for (int z = 0; z < Math.min(field.length - i, j); z++)
-                        if (field[i + z][j - z] == num) {
+                        if (Objects.equals(field[i + z][j - z], num)) {
                             temp++;
                         } else break;
                 if (temp > max2)
@@ -90,31 +102,26 @@ class Field {
     }
 
     void clean(int column, int line) {
-        if (column > field.length || line > field[0].length) {
+        if (column > field.length || line > field[0].length)
             throw new IllegalArgumentException("Входные данные(Вылезли за приделы поля)");
-        }
-        field[column][line] = 0;
-
+        field[column][line] = value._.toString();
     }
 
     void cleanAll() {
-        for (int i = 0; i < field.length; i++) {
-            for (int j = 0; j < y; j++) {
-                field[i][j] = 0;
-            }
-        }
+        for (int i = 0; i < field.length; i++)
+            for (int j = 0; j < y; j++)
+                field[i][j] = value._.toString();
     }
 
-    void add(char value, int column, int line) {
-        if (column > field.length || line > field[0].length) {
+    void add(String valueZ, int column, int line) {
+        if (column > field.length || line > field[0].length)
             throw new IllegalArgumentException("Входные данные(Вылезли за приделы поля)");
-        }
-        if ((value != '0') && (value != 'X')) {
+        if (!Objects.equals(valueZ, "O") && !Objects.equals(valueZ, "X"))
             throw new IllegalArgumentException("Входные данные(X/0)");
-        } else {
-            if (field[column][line] == '0' || field[column][line] == 'X')
+        else {
+            if (Objects.equals(field[column][line], "0") || Objects.equals(field[column][line], "X"))
                 throw new IllegalArgumentException("Клетка занята");
-            field[column][line] = value;
+            field[column][line] = valueZ;
 
         }
 
