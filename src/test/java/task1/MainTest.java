@@ -21,6 +21,15 @@ class MainTest {
         second.x = 4;
         second.y = 4;
 
+        first.add('0', 4, 0);
+        first.add('0', 2, 2);
+        first.add('0', 1, 3);
+        first.add('X', 2, 4);
+        first.add('X', 3, 2);
+        first.add('0', 4, 4);
+        first.add('X', 4, 7);
+        first.cleanAll();
+
         first.add('0', 0, 0);
         first.add('0', 0, 2);
         first.add('0', 0, 3);
@@ -81,6 +90,9 @@ class MainTest {
         second.add('0', 3, 0);
         second.add('0', 3, 1);
         second.add('X', 3, 3);
+
+        second.add('X', 3, 2);
+        second.clean(3,2);
 
         assertEquals(4, second.resultsX());
         assertEquals(2, second.results0());
