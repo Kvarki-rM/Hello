@@ -3,8 +3,8 @@ package task1;
 import java.util.Objects;
 
 class Field {
-    private int x;
-    private int y;
+    int x;
+    int y;
 
     private enum value {
         _, X, O
