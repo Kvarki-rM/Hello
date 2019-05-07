@@ -3,10 +3,10 @@ package task1;
 import java.util.Objects;
 
 class Field {
-    int x;
-    int y;
+    private int x;
+    private int y;
 
-    enum value {
+    private enum value {
         _, X, O
         // _(0), X(1), O(2);
         //  int i;
@@ -16,7 +16,7 @@ class Field {
         //String name(String i) {return i;}
     }
 
-    String[][] field;
+    private String[][] field;
 
     Field(int h, int w) {
         if (h <= 0 || w <= 0) {
