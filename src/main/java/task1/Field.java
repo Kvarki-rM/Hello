@@ -3,7 +3,7 @@ package task1;
 class Field {
     int x;
     int y;
-    static char[][] field;
+    char[][] field;
 
     Field(int h, int w) {
         if (h <= 0 || w <= 0) {
@@ -22,7 +22,7 @@ class Field {
         return (scanner('0'));
     }
 
-    private static int scanner(int count) {
+    private int scanner(int count) {
         int max = 0;
         int temp;
 
@@ -88,7 +88,7 @@ class Field {
         return max2;
     }
 
-    static void add(char value, int column, int line) {
+    void add(char value, int column, int line) {
         if (column > field.length || line > field[0].length) {
             throw new IllegalArgumentException("Входные данные(Вылез за приделы)");
         }
